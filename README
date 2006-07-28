@@ -1,0 +1,78 @@
+ascal
+------------------------------------------
+Ascal is a free implementation of the board game Lasca (similar to
+draughts) for the Gnome desktop.
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  glib2-2.10.3-1
+  gtkmm24-2.8.8-1
+  libglademm24-2.6.2-1
+  libgnomecanvasmm26-2.14.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20060709-1
+  cygport-0.2.4-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  make-3.81-1
+  pkg-config-0.20-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://sourceforge.net/projects/ascal/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/ascal/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ascal-0.0.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ascal-0.0.4-X.cygport all
+
+This will create:
+  /usr/src/ascal-0.0.4-X-src.tar.bz2
+  /usr/src/ascal-0.0.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/ascal.exe
+  /usr/share/ascal/ascal.glade
+  /usr/share/ascal/pixmaps/board.png
+  /usr/share/ascal/pixmaps/board_bg.png
+  /usr/share/ascal/pixmaps/highlField.png
+  /usr/share/ascal/pixmaps/player1.png
+  /usr/share/ascal/pixmaps/player1hl.png
+  /usr/share/ascal/pixmaps/player2.png
+  /usr/share/ascal/pixmaps/player2hl.png
+  /usr/share/doc/Cygwin/ascal-0.0.4.README
+  /usr/share/doc/ascal-0.0.4/ABOUT-NLS
+  /usr/share/doc/ascal-0.0.4/AUTHORS
+  /usr/share/doc/ascal-0.0.4/COPYING
+  /usr/share/doc/ascal-0.0.4/ChangeLog
+  /usr/share/doc/ascal-0.0.4/INSTALL
+  /usr/share/doc/ascal-0.0.4/NEWS
+  /usr/share/doc/ascal-0.0.4/README
+  /usr/share/doc/ascal-0.0.4/THANKS
+
+------------------
+
+Port Notes:
+
+----- version 0.0.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
