@@ -1,0 +1,9 @@
+inherit gnome2
+
+DESCRIPTION="GNOME Laska game"
+HOMEPAGE="http://sourceforge.net/projects/ascal/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+CYGCONF_ARGS+=" --disable-Werror"
+
+DIFF_EXCLUDES+=" m4"
