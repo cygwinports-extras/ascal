@@ -9,3 +9,10 @@ PATCH_URI="mirror://portage/games-board/${PN}/files/${P}-gcc43.patch
 CYGCONF_ARGS+=" --disable-Werror"
 
 DIFF_EXCLUDES+=" m4"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	make_desktop_entry ascal Lasca ascal "Game;BoardGame"
+}
