@@ -1,5 +1,5 @@
 category: Games Gnome
-requires: cygwin libgcc1 libglademm2.4_1 libglib2.0_0 libglibmm2.4_1 libgnomecanvasmm2.6_1 libgtkmm2.4_1 libintl8 libsigc++2.0_0 libstdc++6
+requires: libgcc1 libglademm2.4_1 libglib2.0_0 libglibmm2.4_1 libgnomecanvasmm2.6_1 libgtkmm2.4_1 libintl8 libsigc++2.0_0 libstdc++6
 sdesc: "GNOME Lasca game"
 ldesc: "Ascal is a free implementation of the board game Lasca (similar
 to draughts) for the Gnome desktop."
