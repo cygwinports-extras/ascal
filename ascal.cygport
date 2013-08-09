@@ -1,0 +1,24 @@
+inherit gnome2
+
+NAME="ascal"
+VERSION=0.1.1
+RELEASE=10
+CATEGORY="Games"
+SUMMARY="GNOME Lasca game"
+DESCRIPTION="Ascal is a free implementation of the board game Lasca (similar
+to draughts) for the Gnome desktop."
+HOMEPAGE="http://sourceforge.net/projects/ascal/"
+SRC_URI="mirror://sourceforge/ascal/ascal-${VERSION}.tar.gz"
+PATCH_URI="mirror://portage/games-board/ascal/files/ascal-0.1.1-gcc43.patch
+           mirror://portage/games-board/ascal/files/ascal-0.1.1-install.patch"
+
+CYGCONF_ARGS+=" --disable-Werror"
+
+DIFF_EXCLUDES+=" m4"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	make_desktop_entry ascal Lasca ascal "Game;BoardGame"
+}
